@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체육대회 점수판</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4; /* 배경색 추가 */
+        }
+        h2 {
+            text-align: center;
+            font-size: 28px; /* 제목 크기 조정 */
+            color: #333; /* 제목 색상 */
+            margin-bottom: 20px; /* 제목 아래 여백 추가 */
+        }
+        .table-container {
+            overflow-x: auto; /* 가로 스크롤 가능 */
+            margin: 0 auto; /* 중앙 정렬 */
+            max-width: 800px; /* 최대 너비 설정 */
+            border-radius: 8px; /* 모서리 둥글게 */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+            background-color: #fff; /* 테이블 배경색 */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px; /* 패딩 증가 */
+            transition: background-color 0.3s; /* 배경색 전환 효과 */
+        }
+        th {
+            background-color: #4CAF50; /* 헤더 배경색 */
+            color: white; /* 헤더 글자색 */
+            font-weight: bold; /* 글자 두껍게 */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* 짝수 행 배경색 */
+        }
+        tr:hover {
+            background-color: #e0e0e0; /* 마우스 오버 시 배경색 */
+        }
+        @media (max-width: 360px) {
+            h2 {
+                font-size: 24px; /* 작은 화면에서 제목 크기 줄이기 */
+            }
+            th, td {
+                padding: 8px; /* 작은 화면에서 패딩 줄이기 */
+            }
+            th {
+                font-size: 14px; /* 작은 화면에서 글자 크기 줄이기 */
+            }
+            td {
+                font-size: 12px; /* 작은 화면에서 글자 크기 줄이기 */
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    
+<h2>점수 표</h2>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>학년-반/종목</th>
+                <th>퍼포먼스</th>
+                <th>씨름</th>
+                <th>계주</th>
+                <th>농구</th>
+                <th>축구</th>
+                <th>피구</th>
+                <th>줄넘기</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ Information.0.grade }}-{{ Information.0.classs }}</td>
+                <td>{{ Information.0.performance }}</td>
+                <td>{{ Information.0.ssireum }}</td>
+                <td>{{ Information.0.relay }}</td>
+                <td>{{ Information.0.basketball }}</td>
+                <td>{{ Information.0.soccer }}</td>
+                <td>{{ Information.0.dodge_ball }}</td>
+                <td>{{ Information.0.jump_rope }}</td>
+            </tr>
+            <tr>
+                <td>{{ Information.1.grade }}-{{ Information.1.classs }}</td>
+                <td>{{ Information.1.performance }}</td>
+                <td>{{ Information.1.ssireum }}</td>
+                <td>{{ Information.1.relay }}</td>
+                <td>{{ Information.1.basketball }}</td>
+                <td>{{ Information.1.soccer }}</td>
+                <td>{{ Information.1.dodge_ball }}</td>
+                <td>{{ Information.1.jump_rope }}</td>
+            </tr>
+            <tr>
+                <td>{{ Information.2.grade }}-{{ Information.2.classs }}</td>
+                <td>{{ Information.2.performance }}</td>
+                <td>{{ Information.2.ssireum }}</td>
+                <td>{{ Information.2.relay }}</td>
+                <td>{{ Information.2.basketball }}</td>
+                <td>{{ Information.2.soccer }}</td>
+                <td>{{ Information.2.dodge_ball }}</td>
+                <td>{{ Information.2.jump_rope }}</td>
+            </tr>
+            <tr>
+                <td>{{ Information.3.grade }}-{{ Information.3.classs }}</td>
+                <td>{{ Information.3.performance }}</td>
+                <td>{{ Information.3.ssireum }}</td>
+                <td>{{ Information.3.relay }}</td>
+                <td>{{ Information.3.basketball }}</td>
+                <td>{{ Information.3.soccer }}</td>
+                <td>{{ Information.3.dodge_ball }}</td>
+                <td>{{ Information.3.jump_rope }}</td>
+            </tr>
+            <tr>
+                <td>{{ Information.4.grade }}-{{ Information.4.classs }}</td>
+                <td>{{ Information.4.performance }}</td>
+                <td>{{ Information.4.ssireum }}</td>
+                <td>{{ Information.4.relay }}</td>
+                <td>{{ Information.4.basketball }}</td>
+                <td>{{ Information.4.soccer }}</td>
+                <td>{{ Information.4.dodge_ball }}</td>
+                <td>{{ Information.4.jump_rope }}</td>
+            </tr>
+            <tr>
+                <td>{{ Information.5.grade }}-{{ Information.5.classs }}</td>
+                <td>{{ Information.5.performance }}</td>
+                <td>{{ Information.5.ssireum }}</td>
+                <td>{{ Information.5.relay }}</td>
+                <td>{{ Information.5.basketball }}</td>
+                <td>{{ Information.5.soccer }}</td>
+                <td>{{ Information.5.dodge_ball }}</td>
+                <td>{{ Information.5.jump_rope }}</td>
+            </tr>
+            <tr>
+                <td>{{ Information.6.grade }}-{{ Information.6.classs }}</td>
+                <td>{{ Information.6.performance }}</td>
+                <td>{{ Information.6.ssireum }}</td>
+                <td>{{ Information.6.relay }}</td>
+                <td>{{ Information.6.basketball }}</td>
+                <td>{{ Information.6.soccer }}</td>
+                <td>{{ Information.6.dodge_ball }}</td>
+                <td>{{ Information.6.jump_rope }}</td>
+            </tr>
+            <tr>
+                <td>{{ Information.7.grade }}-{{ Information.7.classs }}</td>
+                <td>{{ Information.7.performance }}</td>
+                <td>{{ Information.7.ssireum }}</td>
+                <td>{{ Information.7.relay }}</td>
+                <td>{{ Information.7.basketball }}</td>
+                <td>{{ Information.7.soccer }}</td>
+                <td>{{ Information.7.dodge_ball }}</td>
+                <td>{{ Information.7.jump_rope }}</td>
+            </tr>
+            <tr>
+                <td>{{ Information.8.grade }}-{{ Information.8.classs }}</td>
+                <td>{{ Information.8.performance }}</td>
+                <td>{{ Information.8.ssireum }}</td>
+                <td>{{ Information.8.relay }}</td>
+                <td>{{ Information.8.basketball }}</td>
+                <td>{{ Information.8.soccer }}</td>
+                <td>{{ Information.8.dodge_ball }}</td>
+                <td>{{ Information.8.jump_rope }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,10 +1,11 @@
 from django.db import models
 
 class Event(models.Model):
+    grade = models.IntegerField()
     classs = models.CharField(max_length=10)
     relay = models.IntegerField()
     performance = models.IntegerField()
-    ssrieum  = models.IntegerField()
+    ssireum  = models.IntegerField()
     basketball  = models.IntegerField()
     soccer  = models.IntegerField()
     dodge_ball  = models.IntegerField()

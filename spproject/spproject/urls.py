@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from spapp.views import test1d, test2d, test3d, submit_input, input_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('1grade/', test1d, name="1grade"),
+    path('2grade/', test2d, name="2grade"),
+    path('3grade/', test3d, name="3grade"),
+    path('input/', submit_input, name="submit_input"),
+    path('input_page/', input_page, name= "input_page"),
 ]
