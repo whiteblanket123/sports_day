@@ -15,6 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf.urls import handler404
 from django.urls import path
 from spapp.views import test1d, test2d, test3d, submit_input, input_page
 
@@ -26,3 +27,5 @@ urlpatterns = [
     path('input/', submit_input, name="submit_input"),
     path('input_page/', input_page, name= "input_page"),
 ]
+
+handler404 = 'spapp.views.custom_404_view'

@@ -51,3 +51,6 @@ def submit_input(request):
             return HttpResponse("잘못된 학년입니다.", status=400)
     
     return HttpResponse("잘못된 요청입니다.", status=400)
+
+def custom_404_view(request, exception):
+    return render(request, '404.html', status=404)
