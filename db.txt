@@ -1,0 +1,13 @@
+CREATE TABLE `event` (
+    `id` int NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+    `grade` int DEFAULT NULL,
+    `classs` char(10) DEFAULT NULL,
+    `relay` int DEFAULT NULL,
+    `performance` char(50) DEFAULT NULL,
+    `ssireum` int DEFAULT NULL,
+    `basketball` int DEFAULT NULL,
+    `soccer` int DEFAULT NULL,
+    `dodge_ball` int DEFAULT NULL,
+    `jump_rope` int DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB AUTO_INCREMENT = 28 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci
